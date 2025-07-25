@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="www.youtube.com" method="post">
+        <label for="first_name"> First Name: </label>
+        <input type="text" id="first_name" name="firstname" placeholder="Insert first name :D">
+        <label for="user_email"> Email Adress: </label>
+        <input type="email" name="email" id="user_email" placeholder="you@example.com">
+        <label for="user_password"> Password: </label>
+        <input type="password" name="password" id="user_password" placeholder="**********">
+        <label for="amount"> Amount: </label>
+        <input type="number" name="amount" id="amount">
+        <label for="birth_date"> Date of birth: </label>
+        <input type="date" name="birthdate" id="birth_date">
+
+        <br>texto viva el texto: <textarea name="textarea" id="text_area" rows="1"
+            cols="30"> This area is expandable :)</textarea>
+
+        <label for="car_brand"> Select a car brand: </label>
+        <select name="car">
+            <option value="chevrolet"> Chevrolet </option>
+            <option value="ford"> Ford </option>
+            <option value="toyota" selected> Toyota </option>
+            <option value="honda"> Honda </option>
+            <option value="peugeot"> Peugeot </option>
+            <option value="kia"> Kia </option>
+        </select>
+
+        <label for="car_part"> Select a car part: </label>
+        <select name="carpart" id="car_part">
+            <optgroup label="Motor">
+                <option value="turbo">Turbo</option>
+                <option value="battery">Battery</option>
+                <option value="Fuses">Fuses</option>
+            </optgroup>
+            <optgroup label="Wheels">
+                <option value="rims">Rims</option>
+                <option value="tires">Tires</option>
+                <option value="tire_patch">Tire patch</option>
+            </optgroup>
+        </select>
+
+        <h1>Ticket Type</h1>
+        <div>
+            <input type="radio" name="ticket_type" id="child" value="child">
+            <label for="child">Child</label>
+        </div>
+
+        <div>
+            <input type="radio" name="ticket_type" id="adult" value="adult">
+            <label for="adult">Adult</label>
+        </div>
+
+        <div>
+            <input type="radio" name="ticket_type" id="senior" value="senior" checked>
+            <label for="senior">Senior</label>
+        </div>
+
+        <h1>Pizza Toppings</h1>
+
+        <div>
+            <input type="checkbox" name="topping" id="sausage" value="sausage">
+            <label for="sausage">Sausage</label>
+        </div>
+        <div>
+            <input type="checkbox" name="topping" id="onions" value="onions">
+            <label for="onions">Onions</label>
+        </div>
+        <div>
+            <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+        </div>
+        <div>
+            <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+        </div>
+
+        <h1> NEWS</h1>
+        <div>
+            <input type="checkbox" name="news_letter" id="newsletter" checked>
+            <label for="newsletter"> Send me the news letter</label>
+        </div>
+
+        <button> Click Me </button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Click to Toggle</button>
+        <br>
+        <br>
+        <fieldset>
+            <legend>User contact info</legend>
+            <label for="first_name"> First name: </label>
+            <input type="text" name="first_name" id="first_name">
+
+            <label for="last_name"> Last name: </label>
+            <input type="text" name="last_name" id="last_name">
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

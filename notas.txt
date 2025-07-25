@@ -1,0 +1,272 @@
+Knowledge check
+
+----------- SVG -----------
+
+1. What is the xmlns attribute?
+
+r: it's a way to call svg language to an HTML page. (without this some browsers will not render the image or it will have some issues.)
+
+2. What are some situations where you wouldn't want to use SVG?
+
+r: When i need to use high quality images or photorealistic ones that have a lot of details.
+
+3. What are the benefits of "inlining" your SVGs? What are the drawback?
+
+r: The potential to use how you want the image in question because we have the code to project it into a webpage. But also makes the webpage slow
+    in some situations and hard readable to all users(code).
+
+----------- TABLES -----------
+
+1. What is a table?
+
+r: it's a structure that allows to display information with rows and columns.
+
+2. Why is it a bad idea to use HTML Tables for page layour ?
+
+r: Because tables aren't responsive in some situations leading to a bad looking webpage.
+
+3. What are caption elements useful for?
+
+r: These are useful to make more readable our tables, you can use it as titles.
+
+4. What is the scope attribute?
+
+r: They are to a column more readable, with this screen readers use the entire column or row at once
+
+----------- DEFAULT STYLES -----------
+
+1. Why would you want to use a CSS reset?
+
+r: I would use it to make my webpage to be the same in any browser. Makes a default configuration to my CSS file.
+
+2. Are resets required?
+
+r: Depends on the developer because it doesn't have a major impact in the page, but it helps to make a standard look between web browsers.
+
+----------- CSS UNITS -----------
+
+1. Why would you want to use em or rem for font-size instead of px?
+
+r: it's recommended because em and rem are relative to the element parent,so if the parent is 16px and i use 2em the final result will be 16 * 2 = 32px 
+otherwise with rem only depends on the root element doing the same math. (rem > em)
+
+2. What are some instances where you might want to use vh and vw ?
+
+r: It's good to use them when we need to size something relative to the windows size.
+
+3. What are some instances where you might want to use px instead of a relative unit?
+
+r: it's commonly used to everything else except font-size.
+
+----------- More Text Styles -----------
+
+1. What are the 2 ways to add fonts that are not installed on a user's computer?
+
+r: By using web fonts we can use external API to retreive fonts data, as well we can use
+online font libraries that gives you a code you can copy into your CSS file.
+
+2. What is the 'system font stack' and why you want to use it?
+
+r: It's the system own library of fonts that we can use as backup. If we don't use this
+method and can't load external fonts from other websites, the default font will be displayed.
+
+3. Which property would you use to increase or decrease the space between letters in a word?
+
+r: letter-spacing.
+
+4. Which property would you use to increase or decrease the space between lines in a paragraph ?
+
+r: line-height.
+
+----------- More CSS Properties -----------
+
+1. Which property would you use to make an element transparent?
+
+r: opacity.
+
+2. Which property would you use to make a background image tile?
+
+r: background: url("/ruta")
+background-image: 
+
+3. Which property would you use to add scrollbars to an element?
+
+r: overflow.
+
+4. Which property would you use to add a shadow behind an element?
+
+r: box-shadow.
+
+5. Which property would you use to create rounded corners on an element?
+
+r: border-radius
+
+6. How would you use border-radius to make a circular element?
+
+r: border-radius: 100%;
+
+----------- Advanced Selectors -----------
+
+1. What is the difference between the child combinator and the descendant combinator?
+
+r: The child combinator only selects direct children element (one level of identation down) 
+unlike descendant combinator that actually selects all the child elements.
+
+2. How does the syntax of pseudo-classes and pseudo-elements differ?
+
+r: Pseudo classes: ":hover" Pseudo-elements: "::marker"
+
+3. Do pseudo-classes exist somewhere in HTML? Do pseudo-elements?
+
+r: They don't exist in HTML because they are only used to style them.
+
+4. Name two ways you could select every second child of an element, starting with the first.
+
+r: div:nth-child(2n-1) and div:nth-child(odd).
+
+5. What is the difference between div:first-child and div:last-child? What will each select?
+
+r:  The div:first-child only select the first div element and div:last-child select the last one. 
+
+6. What selector would you use to style a button a user is currently hovering over? How about one that is currently being clicked on?
+
+r: :hover and :active
+
+7. How could you select all input elements with a type of text?
+
+r: [attribute="value"]
+
+8. How could you select all classes that begin with thunder?
+
+r: [class^="thunder"]
+
+----------- Positioning -----------
+
+1. What is the difference between static and relative positioning?
+
+r: Static is the default positioning of an element and always follows the same direction (down) and relative
+follows the same behaviour but we can adjust the top, bottom, left and right positioning.
+
+2. What is absolute positioning useful for?
+
+r: To remove an element of the actual flow. Don't affect other elements where it is placed.
+(Good for icons, images with captions, etc.)
+
+3. What is the difference between fixed and sticky positioning?
+
+r: Fixed is always at the same position unlike sticky that it can be placed where we want but being scroll down make it
+fixed to the top of the page.
+
+----------- CSS Functions -----------
+
+1. What are the four CSS math functions we covered above?
+
+r: calc(), min(), max() and clamp().
+
+2. How do we use CSS math functions in our CSS?
+
+r: They do the math when it is needed to resize elements of the webpage. 
+
+3. How can CSS functions help make websites and applications more responsive?
+
+r: By doing precise changes to the elements. Like setting the max size that texts will have, the minimal size of an image 
+or the entire padding of an element by changing the size of the window.
+
+----------- Custom Properties -----------
+
+1. How would you declare a custom property with a name of text-color?
+
+r: --text-color: white; -> declare.
+color: var(--text-color) -> using the value.
+
+2. How would you access a custom property with a name of background-color?
+
+r: --background-color: white -> declare.
+background-color: var(--background-color) -> using the value
+
+3. Where would you declare a custom property to have its scope be global and accessible by all other selectors?
+
+r: class.
+
+4. Where would you declare a custom property so that a user’s theme setting from their OS or browser was taken into account?
+
+r: root.
+
+----------- Browser Compatibility -----------
+
+1. What is the most used browser currently?
+
+r: Google Chrome and Chromium.
+
+2. What was the original name of the first web browser?
+
+r: WorldWideWeb browser.
+
+3. How are mobile browsers different on Apple mobile operating systems from Android?
+
+r: In Apple there are no web browsers using chromium to make it more compatible with the standards because Apple
+devices use WebKit as a rendering engine.
+
+----------- Frameworks and Preprocessors -----------
+
+1. What are CSS frameworks?
+
+r: They are a bundle of CSS classes that make the desing of a webpage faster than starting in a blank one.
+
+2. What are CSS preprocessors?
+
+r: Make the creation of a CSS more easy by allowing to write loops and conditionals in multiple stylesheets.
+It's an extension to vanilla CSS with more functionalities but when starts running transform the code into CSS.
+
+----------- Form Basics -----------
+
+1. Explain what the form element is for and what two attributes it should always include.
+
+r: Forms need always to have an action attribute that allow to send all the data collected in the form to an specific url
+the other attribute is method wich tell the browser request method like GET (get data) and POST (send data).
+
+2. Explain what form controls are at a high level.
+
+r: To start, input elements is the most versatile of all because it can retreive any information, select is good to
+make a user select a predefined value, checkbox allows the user select multiple predefined alternatives and radio shows
+a group of alternatives but only one of the group can be selected.
+
+3. What is the name attribute for?
+
+r: To give a name to the inputs given from a user.
+
+4. What are the three most common form controls you can use for allowing users to select predefined options?
+
+r: Select, checkbox and radio.
+
+5. What are the three types of buttons in HTML?
+
+r: Submit, reset and button.
+
+6. What are the two most challenging aspects of styling forms?
+
+r: The default view of a form is different between all the web browsers and the other challenge in styling them come 
+from radio, buttons, callendar and checkboxes.
+
+----------- Form Validation -----------
+
+1. What does the required validation do?
+
+r: It helps to don't let a variable empty.
+
+2. What validations can you use for checking text length?
+
+r: min-length and max-length.
+
+3. How can you validate the minimum and maximum of numeric inputs?
+
+r: min and max.
+
+4. What can you use the pattern validation for?
+
+r: It can be used to detect if a text input is entered as the page wanted. For example a zip code that has 4 numbers separated
+with a hypen followed by other 5 numbers.
+
+5. What pseudo CSS selectors are available for styling valid and invalid inputs?
+
+r: :valid and :invalid.
