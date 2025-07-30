@@ -1,0 +1,15 @@
+----------------- How This Course Will Work -----------------
+
+1. What is The Odin Project?
+
+r: It's an open source course that works as a build from the ground up codes so it's a perfect
+choice to people who whant to learn from the first steps to be a full stack developer with any
+tool existent.
+
+2. Should you skip anything in The Odin Project or complete it non-linearly?
+
+r: It's not recommended because there are many assignments through the modules that are very
+important to us.
+
+----------------- Introduction to Web Development -----------------
+
